@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 33px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h3 {
+  font: size 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 33px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 22px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* footer p {
+  font-size: 16px;
+} */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+.main-header {
+  background-color: #e4e4e4;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+.post-header {
+  margin-bottom: 44px;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+  /* border-bottom: 2px solid; */
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+.related {
+  list-style: none;
+  margin-left: 0;
+}
+article {
+  margin-bottom: 50px;
+}
+
+aside {
+  background-color: #e4e4e4;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 25px;
+  width: 500px;
+}
+
+ul,
+ol {
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+/* li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+} */
+
+/* article p:last-child {
+  color: red;
+} */
+
+/* Style links */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* resolving conflicts */
+
+#copyright {
+  font-size: 16px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a:link {
+  /* margin: 19px;
+  display: block; */
+  margin-right: 30px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0px;
+}
+
+button {
+  font-size: 22px;
+  padding: 11px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 44px;
+  right: 44px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h3 + p::first-line {
+  color: #1098ad;
+} */
+
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -23px;
+  right: -33px;
+}
+
+/* FLOATS */
+
+/* .author-img {
+  float: left;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+article {
+  width: 740px;
+  float: left;
+}
+aside {
+  width: 400px;
+  float: right;
+}
+
+footer {
+  clear: both;
+} */
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /* gap: 20px; */
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.related-post {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  flex: 0 0 300px;
+}
